@@ -531,4 +531,15 @@ foreach($dep as $dep_number => $dep_name)
     echo "<br>";
 }
 ?>
+<?php
+echo "<br/>";
+echo 'PHP Partie 6';
+?>
+<p>Ex.1</p>
 
+<a href="newindex.php?lastname=Nemare&amp;firstname=Jean&amp;age=25">Vers Partie 6.1.2</a>
+<a href="dateindex.php?startDate=2/05/2016&amp;endDate=27/11/2016">Vers Partie 6.3</a>
+<a href="langindex.php?language=PHP&amp;server=LAMP">Vers Partie 6.4</a>
+<a href="weekindex.php?week=12">Vers Partie 6.5</a>
+<a href="flatindex.php?building=12&amp;room=101">Vers Partie 6.6</a>
+<a href="formulaire.php?">Vers Partie 7 </a>
