@@ -361,5 +361,174 @@ while ($var >=0 )
     $var=$var-12;
 }
 ?>
-
+<?php
+echo "<br/>";
+echo 'PHP Partie 4';
+?>
+<p>Ex.1</p>
+<?php
+function returnTrue($bool)
+{
+echo $bool ? "true" : "false";
+}
+$bool_value = true;
+returnTrue($bool_value);
+?>
+<p>Ex.2</p>
+<?php
+function returnString($string)
+{
+echo $string;
+}
+$string_value = "Hello World !";
+returnString($string_value);
+?>
+<p>Ex.3</p>
+<?php
+function concatString($string1,$string2)
+{
+echo $string1 . $string2;
+}
+$string_value1 = "Hello ";
+$string_value2 = "World !";
+concatString($string_value1,$string_value2);
+?>
+<p>Ex.4</p>
+<?php
+function compareNumber($nb1,$nb2)
+{  
+    if ($nb1>$nb2)
+    {
+    echo "Le premier nombre est plus grand";
+    }
+    elseif ($nb1<$nb2)
+    {
+    echo "Le premier nombre est plus petit";
+    }
+    else
+    {
+    echo "Les deux nombres sont identiques";
+    }
+}
+$nb_value1=3;
+$nb_value2=12;
+compareNumber($nb_value1,$nb_value2);
+?>
+<p>Ex.5</p>
+<?php
+function fuseNbString($nb,$string)
+{
+echo $nb . $string;
+}
+$nb_value =100;
+$string_value = " Potatoes !";
+concatString($nb_value,$string_value);
+?>
+<p>Ex.6</p>
+<?php
+function helloM($lastname,$firstname,$age)
+{
+echo "Bonjour $lastname $firstname, tu as $age ans.";
+}
+helloM("Doe","John",170);
+?>
+<p>Ex.7</p>
+<?php
+function genderAge($age,$gender)
+{
+if ($age<18 & $gender=="Homme")
+{
+echo $age;
+echo "<br/>";
+echo"Vous êtes un homme et vous êtes mineur.";
+}
+elseif ($age>=18 & $gender=="Homme")
+{
+echo $age;
+echo "<br/>";
+echo "Vous êtes un homme et vous êtes majeur.";
+}
+elseif ($age<18 & $gender=="Femme")
+{
+echo $age;
+echo "<br/>";
+echo"Vous êtes une femme et vous êtes mineur.";
+}
+elseif ($age>=18 & $gender=="Femme")
+{
+echo $age;
+echo "<br/>";
+echo"Vous êtes une femme et vous êtes majeur.";
+}
+}
+genderAge(25,"Femme");
+?>
+<p>Ex.8</p>
+<?php
+function sumNb($nb1,$nb2,$nb3)
+{
+echo $nb1+$nb2+$nb3;
+}
+sumNb(1,100,1000);
+echo "<br/>";
+?>
+<?php
+echo "<br/>";
+echo 'PHP Partie 5';
+?>
+<p>Ex.1</p>
+<?php
+$months = array("janvier","février","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","décembre");
+echo $months[1];
+?>
+<p>Ex.2</p>
+<?php
+echo $months[2];
+?>
+<p>Ex.3</p>
+<?php
+echo $months[5];
+?>
+<p>Ex.4</p>
+<?php
+$months[7] = "août"; 
+echo $months[7];
+?>
+<p>Ex.5</p>
+<?php
+$dep = array("02"=>"Aisne", "59"=>"Nord", "60"=>"Oise", "62"=>"Pas-de-Calais","80"=>"Somme")
+?>
+<p>Ex.6</p>
+<?php
+echo $dep["59"];
+?>
+<p>Ex.7</p>
+<?php
+echo "La ville de Reims se trouve dans le département de la " . $dep["80"];
+?>
+<p>Ex.8</p>
+<?php
+$arrlength = count($months);
+for($i = 0; $i < $arrlength; $i++)
+{
+echo $months[$i];
+echo "<br>";
+}
+?>
+<p>Ex.9</p>
+<?php
+foreach($dep as $dep_number => $dep_name)
+{
+    echo "Département : " . $dep_name .".";
+    echo "<br>";
+}
+?>
+<p>Ex.10</p>
+<?php
+foreach($dep as $dep_number => $dep_name)
+{
+    echo "N°" . $dep_number . " - Département : " . $dep_name .".";
+    echo "<br>";
+}
+?>
 
