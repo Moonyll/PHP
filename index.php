@@ -3,30 +3,30 @@ echo 'PHP Partie 1';
 ?>
 <p>Ex.1</p>
 <?php
-$age_du_chat = 7;
-echo "l'age du chat est de $age_du_chat ans.";
+$name = 'felix';
+echo 'chat se nomme '. $name . '.';
 ?>
 <p>Ex.2</p>
 <?php
 $lastname = 'John';
 $firstname = 'Doe';
 $age = 150;
-echo "$lastname $firstname $age years old.";
+echo $lastname . ' ' . $firstname . ' ' . $age . ' years old.';
 ?>
 <p>Ex.3</p>
 <?php
 $km = 1;
-echo "$km \n";
+echo "$km";
 echo "<br/>";
 $km = 3;
-echo "$km \n";
+echo "$km";
 echo "<br/>";
 $km = 125;
-echo "$km \n";
+echo "$km";
 ?>
 <p>Ex.4</p>
 <?php
-$string = "chat";
+$string = "chat"; // settype() pour typer les variables
 $int = 7;
 $float = 1.77;
 $bool = true;
@@ -37,12 +37,14 @@ echo $int;
 echo "<br/>";
 echo $float;
 echo "<br/>";
-echo $bool ? 'true' : 'false';
+echo $bool===true ? 'true' : 'false';
 //
 ?>
 <p>Ex.5</p>
 <?php
-$number = NULL;
+//settype($number ,'integer');
+$number = (integer) NULL; // ou int
+var_dump($number);
 echo "initial number value is : $number";
 $number = 10;
 echo "<br/>";
@@ -51,7 +53,7 @@ echo "updated number value is : $number";
 <p>Ex.6</p>
 <?php
 $name = 'World';
-echo "Bonjour $name, comment vas tu ?";
+echo 'Bonjour ' . $name . ' , comment vas tu ?';
 ?>
 <p>Ex.7</p>
 <?php
@@ -79,21 +81,21 @@ echo 'PHP Partie 2';
 ?>
 <p>Ex.1</p>
 <?php
-$age = 7;
+$age = 77;
 
-if ($age < 18)
+if ($age >= 18)
 {
-echo "Vous êtes mineur.";
+echo "Vous êtes majeur.";
 }
 else
 {
-echo "Vous êtes majeur.";
+echo "Vous êtes mineur.";
 }
 ?>
 <p>Ex.2</p>
 <?php
 $isEasy = true;
-// echo $isEasy ? "C'est facile !!" : "C'est difficile !!!";
+// echo $isEasy===true ? "C'est facile !!" : "C'est difficile !!!";
 if ($isEasy === true)
 {
 echo "C'est facile !!";
@@ -113,29 +115,29 @@ $age=rand($min,$max);
 $gender_type=array("Homme","Femme");
 $gender = $gender_type[rand($min_g,$max_g)];
 //
-if ($age<18 & $gender==$gender_type[0])
+if ($age<18 && $gender==$gender_type[0])
 {
 echo $age;
 echo "<br/>";
 echo"Vous êtes un homme et vous êtes mineur.";
 }
-elseif ($age>=18 & $gender==$gender_type[0])
+elseif ($age>=18 && $gender==$gender_type[0])
 {
 echo $age;
 echo "<br/>";
 echo "Vous êtes un homme et vous êtes majeur.";
 }
-elseif ($age<18 & $gender==$gender_type[1])
+elseif ($age<18 && $gender==$gender_type[1])
 {
 echo $age;
 echo "<br/>";
-echo"Vous êtes une femme et vous êtes mineur.";
+echo"Vous êtes une femme et vous êtes mineur(e).";
 }
-elseif ($age>=18 & $gender==$gender_type[1])
+elseif ($age>=18 && $gender==$gender_type[1])
 {
 echo $age;
 echo "<br/>";
-echo"Vous êtes une femme et vous êtes majeur.";
+echo"Vous êtes une femme et vous êtes majeur(e).";
 }
 //
 ?>
@@ -295,7 +297,7 @@ $min=1;
 $max=100;
 $nb2=rand($min,$max);
 //
-while ($nb1 > 10)
+while ($nb1 >= 10)
 {
     echo $nb1*$nb2;
     echo "<br/>";
@@ -310,19 +312,17 @@ while ($var < 10)
 {
     echo $var;
     echo "<br/>";
-    $var= $var + ($var/2);
+    $var+= $var/2; // On précise le pas voulu.
 }
 ?>
 <p>Ex.5</p>
 <?php
-$var = 1;
-while ($var <= 15)
+for ($var = 1; $var <= 15 ;$var++)
 {
     echo $var;
     echo "<br/>";
-    echo "On y arrive presque.";
+    echo ($var == 15) ? 'On y est': 'On y arrive presque.';
     echo "<br/>";
-    $var++;
 }
 ?>
 <p>Ex.6</p>
@@ -346,7 +346,7 @@ while ($var <=100 )
     echo "<br/>";
     echo "On tient le bon bout.";
     echo "<br/>";
-    $var=$var+15;
+    $var+=15;
 }
 ?>
 <p>Ex.8</p>
@@ -358,7 +358,7 @@ while ($var >=0 )
     echo "<br/>";
     echo "Enfin !!!!.";
     echo "<br/>";
-    $var=$var-12;
+    $var-=12;
 }
 ?>
 <?php
@@ -543,3 +543,10 @@ echo 'PHP Partie 6';
 <a href="weekindex.php?week=12">Vers Partie 6.5</a>
 <a href="flatindex.php?building=12&amp;room=101">Vers Partie 6.6</a>
 <a href="formulaire.php?">Vers Partie 7 </a>
+<a href="form_ex5.php?">Vers Partie 7.5 </a>
+<a href="form_ex6.php?">Vers Partie 7.6 </a>
+<a href="form_ex7.php?">Vers Partie 7.7 </a>
+<a href="page8.php?">Vers Partie 8 </a>
+<a href="testform.php">Vers test </a>
+<a href="session.php">Vers 8.2 </a>
+<a href="cookieform.php">Vers 8.3 </a>
