@@ -1,0 +1,43 @@
+body
+{
+    font-family: "Arial", serif;
+    
+}
+table
+{
+    border-collapse: collapse;
+}
+
+th, td
+{
+    color: #808080;
+    border: 1px solid #808080;
+    border-collapse: collapse;
+    width: 90px;
+    height : 50px;
+}
+#td_title
+{
+    background-color: #808080;
+    color : white;
+    text-align: center;
+    height:50%;
+}
+.empty
+{
+    background-color: #e0e0d1;
+}
+#table_title
+{
+    font-size: 30px;
+    border: none;
+    vertical-align: bottom;
+}
+.table_value
+{
+    text-align: left;
+    vertical-align: top;
+    border-collapse: collapse;
+    font-size: 90%;
+    font-weight: bold;
+}

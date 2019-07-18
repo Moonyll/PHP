@@ -550,3 +550,6 @@ echo 'PHP Partie 6';
 <a href="testform.php">Vers test </a>
 <a href="session.php">Vers 8.2 </a>
 <a href="cookieform.php">Vers 8.3 </a>
+<a href="date.php">Vers 9 </a>
+<a href="form_calendar.php">Vers TP - Calendrier </a>
+<a href="formulaire10.php">Vers TP1 - 10 </a>
