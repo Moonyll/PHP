@@ -1,0 +1,39 @@
+body
+{
+font-family: Arial;
+font-weight:bold;
+background-color: #00004d;
+color :white;
+}
+fieldset
+{
+    border: none;
+    background-color: #94b8b8;
+}
+label
+{
+color : #1a1aff;
+font-weight: bold;
+margin:5px;
+}
+input, select, textarea, .areas
+{
+   
+    margin:5px;
+}
+::placeholder
+{
+    text-align: center;
+    color :#7a7a52;
+}
+legend
+{
+    font-size: 20px;
+    color :white;
+    background-color: #3377ff;
+}
+textarea
+{
+width: 600px;
+height:60px;
+}
