@@ -555,3 +555,4 @@ echo 'PHP Partie 6';
 <a href="formulaire10.php">Vers TP1 - 10.1 </a>
 <a href="formulaire10.2.php">Vers TP2 - 10.2 </a>
 <a href="formulaire10.3.php">Vers TP2 - 10.3 </a>
+<a href="calculette.php">Vers Partie 11 - Calculette </a>
