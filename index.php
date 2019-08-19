@@ -552,4 +552,6 @@ echo 'PHP Partie 6';
 <a href="cookieform.php">Vers 8.3 </a>
 <a href="date.php">Vers 9 </a>
 <a href="form_calendar.php">Vers TP - Calendrier </a>
-<a href="formulaire10.php">Vers TP1 - 10 </a>
+<a href="formulaire10.php">Vers TP1 - 10.1 </a>
+<a href="formulaire10.2.php">Vers TP2 - 10.2 </a>
+<a href="formulaire10.3.php">Vers TP2 - 10.3 </a>

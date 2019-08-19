@@ -41,3 +41,8 @@ select, .forms
     width: 245px;
     height:30px;
 }
+img
+{
+    width: 100px;
+    height:100px;
+}

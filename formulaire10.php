@@ -12,7 +12,7 @@
         <legend>Nouvel Apprenant - Information Personnelles   </legend>
 <label>Nom</label><br><input type="text" name="lastname" placeholder="nom" /><br>
 <label>Prénom</label><br><input type="text" name="firstname" placeholder="prénom"/><br>
-<label>Date de naissance</label><br><input type="date" name="birth"/><br>
+<label>Date de naissance</label><br><input type="date" name="birth" class="forms"/><br>
 <label>Pays de naissance</label><br><input type="text" name="country" placeholder="pays"/><br>
 <label>Nationalité</label><br><input type="text" name="origin" placeholder="nationalité"/><br>
 <label>Adresse</label><br><input type="text" name="address" placeholder="adresse"/><br>
@@ -26,7 +26,7 @@
         <option value="bac+3 ou plus">bac+3 ou supérieur</option>
         </select><br>
 <label>Numéro pôle emploi</label><br><input type="text" name="pnumber" /><br>
-<label>Nombre de badge</label><br><input type="number" name="bnumber" /><br>
+<label>Nombre de badge</label><br><input type="number" name="bnumber" class="forms" /><br>
 <label>Liens codecademy</label><br><input type="url" name="codelink" /><br>
 <label>Si vous étiez un super héros / une super héroïne, qui seriez-vous et pourquoi ?</label><br>
 <textarea name="hero" placeholder="votre texte ici"></textarea><br>
