@@ -1,0 +1,41 @@
+body
+{
+display : block;
+text-align: center;
+font-family: Arial;
+font-weight:bold;
+background-color: #00004d;
+color :white;
+}
+input
+{
+   margin:5px;
+}
+input[type=submit]
+{
+background-color: aqua;
+border: 3px solid white;
+border-radius: 5px;
+font-size: 30px;
+font-weight: bold;
+color:blue;
+height: 50px;
+width: 50px;
+}
+input[type=text]
+{
+text-align: center;
+background-color: white;
+border: 3px solid yellow;
+border-radius: 5px;
+font-size: 30px;
+font-weight: bold;
+color:black;
+height: 50px;
+width: 150px;
+}
+.display
+{
+    color:yellow !important;
+    font-size: 30px;
+}
